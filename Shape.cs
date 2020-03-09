@@ -10,6 +10,7 @@ namespace CMP1903ML08a
     {
         //Dynamic/runtime polymorphism
         //method overriding
+       
         public virtual string Draw()
         {
             return "";
