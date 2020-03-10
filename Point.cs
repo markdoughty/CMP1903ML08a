@@ -28,6 +28,15 @@ namespace CMP1903ML08a
             return tempPoint;
         }
 
-      
+        //overload '-' operator
+        public static Point operator -(Point p1, Point p2)
+        {
+            Point tempPoint = new Point(0, 0);
+            tempPoint.X = p1.X - p2.X;
+            tempPoint.Y = p1.Y - p2.Y;
+            return tempPoint;
+        }
+
+
     }
 }

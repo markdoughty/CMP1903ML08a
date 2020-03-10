@@ -6,24 +6,20 @@ using System.Threading.Tasks;
 
 namespace CMP1903ML08a
 {
-    class Square : Shape
+    class Circle : Shape
     {
-        public int Length{get; set;}
-        public int Width { get; set; }
+        public int Radius { get; set; }
 
-        public Square(int l, int w)
+        public Circle(int r)
         {
-            Length = l;
-            Width = w;
+            Radius = r;
         }
         //Single Responsibility Principle:
         //eg: making sure class methods only return data, and do
         //not handle the output method
-
-        //Overriding method in the base class
         public override string Draw()
         {
-            return "Drawing a Square";
+            return "Drawing a circle";
         }
         //Open/Closed Principle
         //Make sure that we can add functionality to the class (Area() method)
@@ -32,9 +28,8 @@ namespace CMP1903ML08a
         //if another Area calculation is brought in.
         public override double Area()
         {
-            return Length * Width;
+            return Math.PI * Radius * Radius;
         }
-
 
     }
 }

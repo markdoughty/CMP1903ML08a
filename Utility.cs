@@ -19,5 +19,10 @@ namespace CMP1903ML08a
         {
             return a + b + c;
         }
+
+        public static int addInts(int a, int b, int c, int d)
+        {
+            return a + b + c + d;
+        }
     }
 }

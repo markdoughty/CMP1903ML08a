@@ -13,7 +13,11 @@ namespace CMP1903ML08a
        
         public virtual string Draw()
         {
-            return "";
+            return "Base shape draw";
+        }
+        public virtual double Area()
+        {
+            return 0.0;
         }
     }
 }
